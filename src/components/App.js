@@ -1,9 +1,10 @@
 import React from 'react'
 
+import store from '../mobx/TodoStore'
+import TodoList from './TodoList'
+
 export default function App(/* {} */) {
   return (
-    <div>
-      <h1>Hello, MobX</h1>
-    </div>
+    <TodoList store={store} />
   )
 }
